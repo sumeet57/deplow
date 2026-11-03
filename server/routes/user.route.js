@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { getCurrentUser, handleGoogleAuth, handleLogout } from "../controllers/auth.controller.js";
-import { isAuthenticated } from "../middlewares/auth.middleware.js";
+import  {isAuthenticated} from "../middlewares/auth.middleware.js";
 
 
 const authRouter = Router();

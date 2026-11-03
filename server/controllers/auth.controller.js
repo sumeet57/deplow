@@ -1,7 +1,7 @@
 // src/controllers/auth.controller.js
 import { googleAuthService } from "../services/auth.service.js";
 import User from "../models/user.model.js";
-import { asyncHandler } from "../utils/async-handler.js";
+import asyncHandler from "../utils/async-handler.js";
 import { ApiResponse } from "../utils/api-response.js";
 export const handleGoogleAuth = asyncHandler(async (req, res) => {
   const { accessToken } = req.body;
